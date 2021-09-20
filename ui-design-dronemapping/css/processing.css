@@ -1,0 +1,15 @@
+hr {
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 160%;
+    width: 60%;
+    margin: 0;
+    background: #61B4C6;
+    border: none;
+} 
+
+#processing-btn {
+    opacity: 1;
+}
