@@ -140,5 +140,20 @@ hr {
     width: 36px;
     height: 36px;
     left: 127px;
-    top: 237px;
+    top: 200px;
+}
+
+#images-title{
+    position: absolute;
+    width: 186px;
+    height: 41px;
+    left: 182px;
+    top: 170px;
+
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 41px;
+    color: #ffffff;
 }
