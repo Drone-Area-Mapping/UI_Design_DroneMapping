@@ -1,6 +1,7 @@
 :root {
     --fill-battery: red;
     --fill-storage: green;
+    --fill-images: green;
 }
 
 hr {
@@ -15,9 +16,9 @@ hr {
     border: none;
 } 
 
-#capture-btn { opacity: 1; }
+#capture-btn { opacity: 1; }    
 
-.ldBar {
+.battery-chart, .storage-chart {
     display: inline-block;
     top: 250px;
 }
@@ -37,3 +38,24 @@ hr {
 .storage-chart { left: 55%; }
 
 .storage-chart path.mainline { stroke: var(--fill-storage); }
+
+.images-chart {
+    left: 10px;
+    top: 70%;
+}
+
+.images-chart path.mainline { stroke: var(--fill-images) } 
+
+.images-box {
+    position: absolute;
+    width: 400px;
+    height: 560px;
+    left: 5%;
+    top: 20%;
+    
+    /* Gradient */
+    
+    background: linear-gradient(157.89deg, #585858 2.85%, #272727 99.42%, #726F6F 99.43%);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
