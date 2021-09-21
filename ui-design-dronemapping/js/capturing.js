@@ -1,5 +1,5 @@
-const batteryPercentage = 90;
-const storage = 50;
+const batteryPercentage = 100;
+const storage = 10;
 var batteryChart, storageChart;
 
 $(document).ready(function() {
@@ -30,5 +30,12 @@ const drawChart = function(value, type) {
         "value": value
     });
 }
+
+
+var progressbar = new ldBar('progressbar', {
+    "stroke": correctChart(value, type),
+    "stroke-width": 6,
+    "value": value
+});
 
 
