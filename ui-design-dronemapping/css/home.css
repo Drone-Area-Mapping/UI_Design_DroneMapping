@@ -54,7 +54,7 @@ hr {
     font-size: 24px;
     line-height: 33px;
 }
-.getstarted-btn {
+#getstarted-btn {
     position: absolute;
     width: 303px;
     height: 80px;
@@ -72,7 +72,7 @@ hr {
     line-height: 30px;
 }
 
-.getstarted-btn:hover {
+#getstarted-btn:hover {
     transition: 0.5s;
     background-color: #61B4C6;
 }
