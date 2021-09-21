@@ -7,6 +7,8 @@
 
   <title>Drone Area Mapping</title>
 
+  <script src="../libraries/jquery-min.js	"></script>
+
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/processing.css">
 
@@ -32,9 +34,9 @@
   <div id="stitch-layers-box"></div>
   <div id="export-box"></div>
 
-  <button id="processing-start-button" onclick="buttonStart()">Start</button>
-  <button id="processing-stop-button" onclick="buttonStop()">Stop</button>
-  <button id="processing-export-button" onclick="buttonExport()">Export</button>
+  <button id="processing-start-button" onmousedown="mouseDownStart()">Start</button>
+  <button id="processing-stop-button" onmousedown="mouseDownStop()">Stop</button>
+  <button id="processing-export-button" onmousedown="mouseDownExport()">Export</button>
 
   <img id="images-icon" src="../resources/images-icon.png">
 
