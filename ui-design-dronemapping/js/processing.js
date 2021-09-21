@@ -1,3 +1,7 @@
 function buttonStart(){
+
+}
+
+function buttonStop(){
     
 }

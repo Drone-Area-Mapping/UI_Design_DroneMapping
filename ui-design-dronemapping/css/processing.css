@@ -81,3 +81,22 @@ hr {
     font-size: 24px;
     line-height: 30px;
 }
+
+#processing-stop-button{
+    border: 2px solid #FF0000;
+    background-color: transparent; 
+    box-sizing: border-box;
+    filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 40px;
+
+    position: absolute;
+    width: 145px;
+    height: 79.03px;
+    left: 286px;
+    top: 346px;
+
+    color: white;
+    font-family: Quicksand;
+    font-size: 24px;
+    line-height: 30px;
+}
