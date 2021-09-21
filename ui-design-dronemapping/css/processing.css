@@ -64,16 +64,17 @@ hr {
 }
 
 #processing-start-button{
-    position: absolute;
-    width: 303px;
-    height: 80px;
-    left: 122px;
-    top: 310px;  
-    border: 2px solid #FFFFFF;
+    border: 2px solid #05FF00;
     background-color: transparent; 
     box-sizing: border-box;
     filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
     border-radius: 40px;
+
+    position: absolute;
+    width: 145px;
+    height: 79.03px;
+    left: 113px;
+    top: 346px;
 
     color: white;
     font-family: Quicksand;
