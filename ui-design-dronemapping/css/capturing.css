@@ -1,3 +1,8 @@
+:root {
+    --fill-battery: red;
+    --fill-storage: green;
+}
+
 hr {
     height: 3px;
     left: 50%;
@@ -10,12 +15,25 @@ hr {
     border: none;
 } 
 
-#capture-btn {
-    opacity: 1;
+#capture-btn { opacity: 1; }
+
+.ldBar {
+    display: inline-block;
+    top: 250px;
 }
 
-#container {
-    margin: 20px;
-    width: 200px;
-    height: 200px;
-  }
+.ldBar path.mainline {
+    fill: url(#gradient) #585858;
+    stroke-width: 6;
+    stroke-linecap: round;
+}
+
+.ldBar-label { visibility: hidden; }
+
+.battery-chart { left: 50%; }
+
+.battery-chart path.mainline { stroke: var(--fill-battery); }
+
+.storage-chart { left: 55%; }
+
+.storage-chart path.mainline { stroke: var(--fill-storage); }

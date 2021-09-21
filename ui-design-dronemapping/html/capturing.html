@@ -9,10 +9,12 @@
 
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/capturing.css">
+  <link rel="stylesheet" href="../libraries/loading-bar.min.css">
 
-  <script src="../js/main.js"></script>
-  <script src="../libraries/progressbar-min.js"></script>
-
+  <script src="../libraries/loading-bar.min.js"></script>
+  <script src="../libraries/jquery-min.js	"></script>
+  <script src="../js/capturing.js"></script>
+  
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
@@ -27,7 +29,25 @@
     <img id="avans-logo" src="../resources/Avans-logo.png">
     <img id="RAN-logo" src="../resources/ran-logo.png">
   </div>
-  
+    
+    <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+      <linearGradient id="gradient" x2="1" y2="1">
+        <stop offset="2.58%" stop-color="#585858" />
+        <stop offset="99.42%" stop-color="#272727" />
+        <stop offset="99.43%" stop-color="#726F6F" />
+      </linearGradient>
+    </svg>
+
+    <div class="battery-chart label-center"
+      style="width:300px;height:300px"
+      data-preset="circle"
+      data-stroke-trail-width="0">
+    </div>
+    <div class="storage-chart label-center"
+      style="width:300px;height:300px"
+      data-preset="circle"
+      data-stroke-trail-width="0">
+  </div>
 </body>
 </html>
 
