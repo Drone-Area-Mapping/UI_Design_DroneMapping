@@ -16,26 +16,22 @@ function mouseDownStart(){
         Start = false;
 
         colorButtons(Grey, Trans, Blue);
-
-        console.log("cannot start beceause exporting")
+        console.log("cannot start beceause exporting");
     }
     else if(Stop){
         Start = true;
         Exp = false;
         Stop = false;
-        $('#processing-start-button').css('background-color', Green);
-        $('#processing-stop-button').css('background-color', Trans);
-        $('#processing-export-button').css('background-color', Grey);
-        console.log("start program after stopping")
+
+        colorButtons(Green, Trans, Grey);
+        console.log("start program after stopping");
 
         TimerExp = setTimeout(function() {
             Exp = false;
             Start = false;
             Stop = false;
 
-            $('#processing-start-button').css('background-color', Trans);
-            $('#processing-stop-button').css('background-color', Trans);
-            $('#processing-export-button').css('background-color', Trans);
+            colorButtons(Trans, Trans, Trans);
             console.log("done exporting/timer start ended");
 
         } , 3000);
@@ -43,9 +39,8 @@ function mouseDownStart(){
     }
     else {
         Start = true;
-        document.getElementById("processing-start-button").style.backgroundColor = Green;
-        document.getElementById("processing-stop-button").style.backgroundColor = Trans;
-        document.getElementById("processing-export-button").style.backgroundColor = Grey;
+
+        colorButtons(Green, Trans, Grey);
         console.log("Programm started")
 
         TimerStart = setTimeout(function() {
@@ -53,9 +48,7 @@ function mouseDownStart(){
             Start = false;
             Stop = false;
 
-            document.getElementById("processing-start-button").style.backgroundColor = Trans;
-            document.getElementById("processing-stop-button").style.backgroundColor = Trans;
-            document.getElementById("processing-export-button").style.backgroundColor = Trans;
+            colorButtons(Trans, Trans, Trans);
             console.log("done exporting/timer start ended");
 
         } , 3000);
@@ -67,10 +60,8 @@ function mouseDownStop(){
     Start = false;
     Exp = false;
     Stop = true;
-    document.getElementById("processing-start-button").style.backgroundColor = Trans;
-    document.getElementById("processing-stop-button").style.backgroundColor = Red;
-    document.getElementById("processing-export-button").style.backgroundColor = Trans;
-   
+
+    colorButtons(Trans, Red, Trans);
     clearTimeout(TimerExp);
     clearTimeout(TimerStart);
     
@@ -83,9 +74,8 @@ function mouseDownExport(){
         Exp = true;
         Stop = false;
         Start = false;
-        document.getElementById("processing-start-button").style.backgroundColor = Grey;
-        document.getElementById("processing-stop-button").style.backgroundColor = Trans;
-        document.getElementById("processing-export-button").style.backgroundColor = Blue;
+
+        colorButtons(Grey, Trans, Blue);
         console.log("Start exporting after stopping")
 
         TimerExp = setTimeout(function() {
@@ -93,9 +83,7 @@ function mouseDownExport(){
             Start = false;
             Stop = false;
 
-            document.getElementById("processing-start-button").style.backgroundColor = Trans;
-            document.getElementById("processing-stop-button").style.backgroundColor = Trans;
-            document.getElementById("processing-export-button").style.backgroundColor = Trans;
+            colorButtons(Trans, Trans, Trans);
             console.log("done exporting/timer start ended");
 
         } , 3000);
@@ -103,18 +91,16 @@ function mouseDownExport(){
     else if (Start){
         Exp = false;
         Stop = false;
-        document.getElementById("processing-start-button").style.backgroundColor = Green;
-        document.getElementById("processing-stop-button").style.backgroundColor = Trans;
-        document.getElementById("processing-export-button").style.backgroundColor = Grey;
+
+        colorButtons(Green, Trans, Grey);
         console.log("cannot start while exporting");
     }
     else{
         Exp = true;
         Stop = false;
         Start = false;
-        document.getElementById("processing-start-button").style.backgroundColor = Grey;
-        document.getElementById("processing-stop-button").style.backgroundColor = Trans;
-        document.getElementById("processing-export-button").style.backgroundColor = Blue;
+
+        colorButtons(Grey, Trans, Blue);
         console.log("start exporting");
 
         TimerExp = setTimeout(function() {
@@ -122,9 +108,7 @@ function mouseDownExport(){
             Start = false;
             Stop = false;
 
-            document.getElementById("processing-start-button").style.backgroundColor = Trans;
-            document.getElementById("processing-stop-button").style.backgroundColor = Trans;
-            document.getElementById("processing-export-button").style.backgroundColor = Trans;
+            colorButtons(Trans, Trans, Trans);
             console.log("done exporting/timer start ended");
 
         } , 3000);
