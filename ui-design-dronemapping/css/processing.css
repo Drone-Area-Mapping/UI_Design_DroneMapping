@@ -1,3 +1,5 @@
+
+
 hr {
     height: 3px;
     left: 50%;
@@ -156,4 +158,54 @@ hr {
     font-size: 18px;
     line-height: 41px;
     color: #ffffff;
+}
+.progress-container {
+    position: absolute;
+    height: 0.8rem;
+    width: 290px;
+    left: 126px;
+    top: 568px;
+
+    background: #B9B9B9;
+    border-radius: 38px;
+}
+  
+.progress {
+    height: 100%;
+    width: 0%;
+    border-radius: 38px;
+
+    background: #159AFB;
+  
+    transition: width 0.4s ease;
+}
+
+#RGB {
+
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 583px;
+    top: 30%;
+
+}
+
+#thermal-infrared{
+
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 583px;
+    top: 35%;
+
+}
+
+#NDVI{
+
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 583px;
+    top: 40%;
+
 }

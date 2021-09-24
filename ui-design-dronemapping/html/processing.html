@@ -34,14 +34,22 @@
   <div id="stitch-layers-box"></div>
   <div id="export-box"></div>
 
-  <button id="processing-start-button" onmousedown="mouseDownStart()">Start</button>
+  <button id="processing-start-button" onmousedown="mouseDownStart()" onmousedown = "move()">Start</button>
   <button id="processing-stop-button" onmousedown="mouseDownStop()">Stop</button>
-  <button id="processing-export-button" onmousedown="mouseDownExport()">Export</button>
+  <button id="processing-export-button" onmousedown="mouseDownExport()" onmousedown = "move()">Export</button>
 
   <img id="images-icon" src="../resources/images-icon.png">
 
   <div id= "images-title"><h1> Processing </h1></div>
 
+  <div class="progress-container">
+    <div class="progress"></div>
+  </div>
+
+  <input type="checkbox" id="RGB" name = "box" value="RGB">
+  <input type="checkbox" id="thermal-infrared" name = "box" value="Them">
+  <input type="checkbox" id="NDVI" name = "box"  value="NDVI">
+   
 </body>
 </html>
 
