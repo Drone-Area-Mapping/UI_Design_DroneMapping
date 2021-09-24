@@ -209,3 +209,13 @@ hr {
     top: 40%;
 
 }
+
+#file-path{
+
+    position: absolute;
+    width: 757px;
+    height: 30px;
+    left: 556px;
+    top: 18%;
+
+}
