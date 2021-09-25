@@ -34,28 +34,27 @@
   <div id="stitch-layers-box"></div>
   <div id="export-box"></div>
 
-  <button id="processing-start-button" onmousedown="mouseDownStart()" onmousedown = "move()">Start</button>
+  <button id="processing-start-button" onmousedown="mouseDownStart()" >Start</button>
   <button id="processing-stop-button" onmousedown="mouseDownStop()">Stop</button>
-  <button id="processing-export-button" onmousedown="mouseDownExport()" onmousedown = "move()">Export</button>
+  <button id="processing-export-button" onmousedown="mouseDownExport()" >Export</button>
 
   <img id="images-icon" src="../resources/images-icon.png">
 
   <div id= "images-title"><h1> Processing </h1></div>
+  <div id= "import-title"><h1> Import file path </h1></div>
+  <div id= "layers-title"><h1> Layers to stich </h1></div>
+  <div id= "export-title"><h1> Export file path </h1></div>
 
   <div class="progress-container">
     <div class="progress"></div>
+    <output id="progress-number">0%</output>
   </div>
 
-  <input type="checkbox" id="RGB" name = "box" value="RGB">
-  <input type="checkbox" id="thermal-infrared" name = "box" value="Them">
-  <input type="checkbox" id="NDVI" name = "box"  value="NDVI">
-
-  <form action="/action_page.php" novalidate>
-    <input type="text" id="file-path" name="path" value="FilePath"><br><br>
-  </form>
-
-  
-  
+  <div class = "checkBoxes">
+    <button id = "RGB-box"></button>
+    <button id = "NDVI-box"></button>
+    <button id = "infra-box"></button>
+  </div>
    
 </body>
 </html>

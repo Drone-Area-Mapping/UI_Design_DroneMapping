@@ -110,7 +110,7 @@ hr {
     left: 113px;
     top: 448px;
 
-    border: 2px solid #61B4C6;
+    border: 2px solid #a46bf0;
     background-color: transparent; 
     box-sizing: border-box;
     filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
@@ -134,7 +134,7 @@ hr {
 
 #processing-export-button:hover {
     transition: 0.5s;
-    background-color: #61B4C6;
+    background-color: #a46bf0;
 }
 
 #images-icon{
@@ -159,63 +159,161 @@ hr {
     line-height: 41px;
     color: #ffffff;
 }
+
+#import-title{
+
+    position: absolute;
+    width: 465px;
+    height: 41px;
+    left: 634px;
+    top: 150px;
+
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 41px;
+
+    color: #FFFFFF;
+
+}
+
+#layers-title{
+
+    position: absolute;
+    width: 263px;
+    height: 41px;
+    left: 633px;
+    top: 285px;
+
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 41px;
+
+    color: #FFFFFF;
+
+}
+
+#export-title{
+    position: absolute;
+    width: 510px;
+    height: 41px;
+    left: 634px;
+    top: 590px;
+
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 41px;
+
+    color: #FFFFFF;
+
+}
+
+
 .progress-container {
     position: absolute;
-    height: 0.8rem;
-    width: 290px;
+    height: 30px;
+    width: 292px;
     left: 126px;
     top: 568px;
 
-    background: #B9B9B9;
+    background:"";
     border-radius: 38px;
+
+    border: 2px solid #61B4C6; 
+    box-sizing: border-box;
+    filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
 }
   
-.progress {
+.progress{
+    position: absolute;
     height: 100%;
     width: 0%;
     border-radius: 38px;
-
-    background: #159AFB;
-  
+    background: #61B4C6;
     transition: width 0.4s ease;
 }
 
-#RGB {
+#progress-number{
+
+    position: absolute;
+    top:140%;
+    left: 0%;
+    color: white;
+    font-family: Quicksand;
+    font-size: 18px;
+    transition: width 0.4s ease;
+
+
+}
+
+#RGB-box{
 
     position: absolute;
     width: 36px;
     height: 36px;
     left: 583px;
-    top: 30%;
+    top: 400px;
 
+    border: 2px solid #ee9b00;
+    background-color: transparent; 
+    box-sizing: border-box;
+    filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 6px;
 }
 
-#thermal-infrared{
+#NDVI-box{
 
     position: absolute;
     width: 36px;
     height: 36px;
     left: 583px;
-    top: 35%;
+    top: 450px;
+
+    border: 2px solid #0a9396;
+    background-color: transparent; 
+    box-sizing: border-box;
+    filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 6px;
 
 }
 
-#NDVI{
+#infra-box{
 
     position: absolute;
     width: 36px;
     height: 36px;
     left: 583px;
-    top: 40%;
+    top: 500px;
+
+    border: 2px solid #9b2226;
+    background-color: transparent; 
+    box-sizing: border-box;
+    filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 6px;
 
 }
 
-#file-path{
-
-    position: absolute;
-    width: 757px;
-    height: 30px;
-    left: 556px;
-    top: 18%;
-
+#RGB-box:hover {
+    transition: 0.5s;
+    background-color: #ee9b00;
 }
+
+#NDVI-box:hover {
+    transition: 0.5s;
+    background-color: #0a9396;
+}
+
+#infra-box:hover {
+    transition: 0.5s;
+    background-color: #9b2226;
+}
+
+
+
+ 
+
