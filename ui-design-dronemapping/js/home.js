@@ -1,17 +1,5 @@
 const buttonInput = function() {
-    let image = document.getElementById('crops-top-image'), opacity;
-
-    if (image.style.opacity == 1) {
-        opacity = 0;
-    } else {
-        opacity = 1;
-    }
-
-    image.setAttribute(`style`, `
-        opacity: ${opacity};
-    `);
-
-    console.log('hey this works! 😚')
+    window.location = 'capturing.html';
 }
 
 function hey(user, password) {
