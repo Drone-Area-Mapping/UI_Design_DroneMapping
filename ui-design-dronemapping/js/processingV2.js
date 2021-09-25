@@ -161,10 +161,14 @@ function colorButtons(startColor, stopColor, exportColor, startColorBorder, expo
     $('#processing-start-button').css('background-color', startColor);
     $('#processing-stop-button').css('background-color', stopColor);
     $('#processing-export-button').css('background-color', exportColor);
-    
+
     $('#processing-start-button').css('border-color', startColorBorder);
     $('#processing-export-button').css('border-color', exportColorBorder);     
 }
+
+//checkboxes
+
+
 
 
 

@@ -145,6 +145,30 @@ hr {
     top: 200px;
 }
 
+#import-icon{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 557px;
+    top: 174px;
+}
+
+#export-icon{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 557px;
+    top: 617px;
+}
+
+#layers-icon{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 552px;
+    top: 312px;
+}
+
 #images-title{
     position: absolute;
     width: 186px;

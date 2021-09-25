@@ -39,6 +39,10 @@
   <button id="processing-export-button" onmousedown="mouseDownExport()" >Export</button>
 
   <img id="images-icon" src="../resources/images-icon.png">
+  <img id="import-icon" src="../resources/import-icon.png">
+  <img id="export-icon" src="../resources/export-icon.png">
+  <img id="layers-icon" src="../resources/layers-to-stich-icon.png">
+  
 
   <div id= "images-title"><h1> Processing </h1></div>
   <div id= "import-title"><h1> Import file path </h1></div>
@@ -50,11 +54,10 @@
     <output id="progress-number">0%</output>
   </div>
 
-  <div class = "checkBoxes">
-    <button id = "RGB-box"></button>
-    <button id = "NDVI-box"></button>
-    <button id = "infra-box"></button>
-  </div>
+  <button id = "RGB-box" onmousedown = "RGBFunction()"></button>
+  <button id = "NDVI-box" onmousedown = "NDVIFunction()"> </button>
+  <button id = "infra-box" onmousedown = "infraFunction()"></button>
+
    
 </body>
 </html>
