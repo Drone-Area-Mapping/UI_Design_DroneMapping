@@ -5,11 +5,18 @@ var TimerExp;
 var downloadTimer;
 var Width;
 
+var NDVI = false;
+var FLIR = false;
+var RGB = false;
+
 var Red = '#FF0000'; //🔴
 var Blue = '#a46bf0'; //🔵
 var Grey = '#808080'; //⚫
 var Green = '#05FF00'; //🟢
 var Trans = ''; //⚪
+var Orange = '#ee9b00';
+var LightBlue = '#0a9396';
+var LightRed = '#9b2226';
 
 function mouseDownStart(){
 
@@ -168,7 +175,43 @@ function colorButtons(startColor, stopColor, exportColor, startColorBorder, expo
 
 //checkboxes
 
+function RGBFunction(){
 
+    RGB = true;
+    NDVI = false;
+    FLIR = false;
+    console.log(RGB, NDVI, FLIR);
+    colorCheckBox(Orange, Trans, Trans);
+
+}
+
+function NDVIFunction(){
+
+    NDVI = true;
+    RGB = false;
+    FLIR = false;
+    console.log(RGB, NDVI, FLIR);
+    colorCheckBox(Trans, LightBlue, Trans);
+
+}
+
+function infraFunction(){
+
+    FLIR = true;
+    NDVI = false;
+    RGB = false;
+    console.log(RGB, NDVI, FLIR);
+    colorCheckBox(Trans, Trans, LightRed);
+     
+}
+
+function colorCheckBox (RGBColor, NDVIColor, infraColor){
+
+    $('#RGB-box').css('background-color', RGBColor);
+    $('#NDVI-box').css('background-color', NDVIColor);
+    $('#infra-box').css('background-color', infraColor);
+
+}
 
 
 

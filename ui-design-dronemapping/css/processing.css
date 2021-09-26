@@ -337,6 +337,50 @@ hr {
     background-color: #9b2226;
 }
 
+#RGB-box-tag{
+    
+    color: white;
+    font-family: Quicksand;
+    font-size: 24px;
+    line-height: 30px;
+
+    position: absolute;
+    width: 49px;
+    height: 30px;
+    left: 661px;
+    top: 380px;
+
+}
+
+#NDVI-box-tag{
+
+    color: white;
+    font-family: Quicksand;
+    font-size: 24px;
+    line-height: 30px;
+
+    position: absolute;
+    width: 57px;
+    height: 30px;
+    left: 661px;
+    top: 430px;
+
+}
+
+#infra-box-tag{
+
+    position: absolute;
+    width: 187px;
+    height: 30px;
+    left: 662px;
+    top: 480px;
+
+    color: white;
+    font-family: Quicksand;
+    font-size: 24px;
+    line-height: 30px;
+
+}
 
 
  
