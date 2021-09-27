@@ -382,6 +382,31 @@ hr {
 
 }
 
+  
+input[type=text] {
+    border: 2px solid #a46bf0;
+    padding: 3px 3px 3px 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    width: 694px;
+    height: 30px;
+    position: absolute;
+    left: 556px;
+    top: 220px;
+}
+
+  
+input[type=text]:hover {
+    transition: background-color 0.3s ease-in-out;
+    background-color: #a46bf0;
+}
+  
+input[type=text]:focus {
+    background-color: #a46bf0;
+}
+
+
 
  
 

@@ -214,4 +214,12 @@ function colorCheckBox (RGBColor, NDVIColor, infraColor){
 }
 
 
+$('#exportPath').change(v => {
+	console.log(v.target.value);
+});
+
+$('#importPath').change(v => {
+	console.log(v.target.value);
+});
+
 
