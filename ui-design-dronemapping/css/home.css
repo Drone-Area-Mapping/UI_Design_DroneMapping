@@ -44,6 +44,7 @@ hr {
 
 .subSubTekst{
     position: absolute;
+    text-align: center;
     width: 451px;
     height: 66px;
     left: 885px;
