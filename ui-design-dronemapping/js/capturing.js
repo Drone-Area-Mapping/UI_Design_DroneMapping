@@ -1,4 +1,4 @@
-var startProgram = false, timer;
+let startProgram = false, timer;
 
 const batteryPercentage = {
     value: 10,
