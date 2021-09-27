@@ -13,8 +13,7 @@ const imagesTaken = {
     total: 300
 };
 
-
-var batteryChart, storageChart, imagesChart;
+let batteryChart, storageChart, imagesChart;
 
 $(document).ready(function() {
     renderCharts(0, 0, 0);
@@ -29,11 +28,14 @@ $(document).ready(function() {
         $(':root').css('--fill-images', correctChart(imagesTaken.value, 'images', imagesTaken.total));
     }, 200)
 
-    $('#slider').on('input', function(e) { 
-        var min = e.target.min,
-            max = e.target.max,
-            val = e.target.value;
+    $('#slider').val(localStorage.getItem('captureInterval') || 50);
+    $('#slider').on('input', e => { 
+        const min = e.target.min;
+        const max = e.target.max;
+        const val = e.target.value;
         
+        localStorage.setItem('captureInterval', e.target.value);
+
         $(e.target).css({
           'backgroundSize': (val - min) * 100 / (max - min) + '% 100%'
         });
@@ -74,7 +76,7 @@ const drawChart = function(value, type, total) {
     });
 }
 
-function start() {
+const start = function() {
     if (!startProgram) {
         console.log(`Heya we're recording 🎥 \n\nThe drone 🔋 is at ${batteryPercentage.value}% and there is ${storage.total - storage.value} gb of 📂 left!`)
         startProgram = true;
@@ -87,7 +89,7 @@ function start() {
     }
 }
 
-function stop() {
+const stop = function() {
     if (startProgram) {
         startProgram = false;
         clearTimeout(timer);
