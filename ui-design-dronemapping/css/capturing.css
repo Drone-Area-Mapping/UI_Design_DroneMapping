@@ -29,11 +29,11 @@ hr {
     stroke-linecap: round;
 }
 
-.battery-chart { left: 50%; }
+.battery-chart { left: 45%; }
 
 .battery-chart path.mainline { stroke: var(--fill-battery); }
 
-.storage-chart { left: 55%; }
+.storage-chart { left: 50%; }
 
 .storage-chart path.mainline { stroke: var(--fill-storage); }
 
