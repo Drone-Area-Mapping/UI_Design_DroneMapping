@@ -213,13 +213,14 @@ function colorCheckBox (RGBColor, NDVIColor, infraColor){
 
 }
 
-
-$('#exportPath').change(v => {
-	console.log(v.target.value);
-});
-
-$('#importPath').change(v => {
-	console.log(v.target.value);
-});
+$(document).ready(function() {
+    $('#exportPath').change(v => {
+        console.log(v.target.value || 'Not a valid value! 💩');
+    });
+    
+    $('#importPath').change(v => {
+        console.log(v.target.value || 'Not a valid value! 💩');
+    });
+})
 
 
